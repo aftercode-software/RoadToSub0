@@ -11,24 +11,24 @@ export default function Timeline() {
     { id: "start", variant: "start" },
     {
       id: "latin-hack",
-      dateLabel: "19.09.2025",
+      dateLabel: "27 sept",
       prize: "$21K",
       title: "Latin Hack",
       description:
-        "Starting line in LATAM. Onboarding for first-timers and seniors, with tracks that reward simple, working prototypes and fast learning.",
-      ctaLabel: "Join the event",
+        "Starting line in LATAM. Welcome first-timers and seniors, with tracks that reward simple, working prototypes.",
+      ctaLabel: "Claim your spot",
       ctaHref: "#latin-hack",
       variant: "event",
       accent: "green",
     },
     {
       id: "gbp",
-      dateLabel: "12.10.2025",
+      dateLabel: "6 oct",
       prize: "$40K",
       title: "Global Builder Party",
       description:
         "Global online hackathon that raises the bar with Polkadot 2.0 topics.",
-      ctaLabel: "Join the event",
+      ctaLabel: "Claim your spot",
       ctaHref: "#global-builder-party",
       variant: "event",
       accent: "pink",
@@ -36,7 +36,7 @@ export default function Timeline() {
     {
       id: "sub0",
       title: "sub0",
-      ctaLabel: "Join the event",
+      ctaLabel: "Claim your spot",
       ctaHref: "#sub0",
       variant: "logo",
       logoSrc: "/sub0-logo.svg",
@@ -64,11 +64,16 @@ export default function Timeline() {
       // style={{ backgroundImage: 'url("/backgrounds/noise.png")' }}
     >
       <Container className="flex flex-col items-center ">
-        <h2 className="font-display leading-[0.95] max-w-5xl text-center flex md:flex-row flex-col gap-4">
+        <h2 className="mt-12 font-display leading-[0.95] max-w-5xl text-center flex md:flex-row flex-col gap-4">
           <span className="block text-3xl sm:text-4xl md:text-5xl">
-            Roadmap To <b>Revolution</b>
+            The <b>roadmap</b>
           </span>
         </h2>
+         <p className="mt-12 font-body max-w-2xl font-manrope text-base text-center text-white/85 sm:text-lg md:max-w-3xl hero-description">
+          Start anywhere. We guide you to a demo and submission.{" "}
+          <span className="font-bold">Win cash prizes along the way.</span> 
+          
+        </p>
         <RoadmapTimeline className="mt-16 mb-16 w-full" items={items} />
       </Container>
     </div>
