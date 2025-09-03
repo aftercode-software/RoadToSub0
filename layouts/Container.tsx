@@ -10,7 +10,7 @@ const cn = (...inputs: unknown[]) => {
 
 export const Container = ({ children, className, ...rest }: ContainerProps) => {
   return (
-    <div className={cn("max-w-[80vw] mx-auto", className)} {...rest}>
+    <div className={cn("max-w-[85vw] mx-auto", className)} {...rest}>
       {children}
     </div>
   );

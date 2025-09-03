@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 const unbounded = localFont({
   src: "/fonts/Unbounded-Variable.ttf",
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body
         className={`${unbounded.className} ${manrope.variable} antialiased`}
       >
+        <Navbar />
         {children}
         <Footer />
       </body>
