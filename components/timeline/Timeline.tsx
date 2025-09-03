@@ -48,7 +48,8 @@ export default function Timeline() {
     gsap.from(".timeline-title", {
       opacity: 0,
       y: 50,
-      duration: 1,
+      duration: 0.5,
+      ease: "power4.out",
       scrollTrigger: {
         trigger: ".timeline-title",
         start: "top 80%",
@@ -59,7 +60,7 @@ export default function Timeline() {
 
   return (
     <div
-      className="w-full min-h-[100dvh] bg-cover bg-center bg-no-repeat timeline-title"
+      className="w-full bg-cover bg-center bg-no-repeat timeline-title"
       // style={{ backgroundImage: 'url("/backgrounds/noise.png")' }}
     >
       <Container className="flex flex-col items-center ">

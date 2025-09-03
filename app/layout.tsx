@@ -2,12 +2,13 @@ import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/Navbar";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
-gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const unbounded = localFont({
   src: "/fonts/Unbounded-Variable.ttf",

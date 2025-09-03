@@ -2,6 +2,8 @@
 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 import Image from "next/image";
 
 export type TimelineItem = {
@@ -22,23 +24,36 @@ type Props = {
   className?: string;
 };
 
+gsap.registerPlugin(ScrollTrigger);
+
 export default function RoadmapTimeline({ items, className }: Props) {
   useGSAP(() => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".roadmap-timeline-heading",
-        start: "20% 80%",
-        pin: true,
-        markers: true,
+        start: "top 80%",
+        end: "bottom 80%",
         toggleActions: "play none none reverse",
       },
     });
-    items.forEach((item) => {
-      tl.from(item.id, {
-        opacity: 0,
-        y: 50,
-        duration: 1,
-      });
+    tl.from(".border-dashed-timeline", {
+      opacity: 0,
+      scale: 0.5,
+      duration: 1,
+      ease: "power4.out",
+    });
+    items.forEach((item, i) => {
+      tl.from(
+        `#${item.id}`,
+        {
+          opacity: 0,
+          scale: 0.8,
+          y: 20,
+          duration: 0.5,
+          ease: "power4.out",
+        },
+        i === 0 ? "<" : "<+0.2"
+      );
     });
   });
 
@@ -59,6 +74,7 @@ export default function RoadmapTimeline({ items, className }: Props) {
               lg:before:left-0 lg:before:right-[12.5%] lg:before:top-1/2 lg:before:bottom-auto
               lg:before:translate-x-0 lg:before:-translate-y-1/2
               lg:before:border-l-0 lg:before:border-t
+              border-dashed-timeline
           "
         >
           {items.map((item) => (
