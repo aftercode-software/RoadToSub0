@@ -67,7 +67,7 @@ export default function EmailForm({ className }: { className?: string }) {
             placeholder="nerd@cool.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="peer w-full bg-transparent outline-none placeholder:text-white/50"
+            className="peer w-full bg-transparent outline-none text-white placeholder-white/50 focus:text-white"
             aria-label="Email"
             required
             disabled={loading}

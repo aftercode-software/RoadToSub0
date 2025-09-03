@@ -73,13 +73,8 @@ export default function HostAnywhere() {
         </h2>
         <span className="host-description text-white">
           <p className="text-xl font-normal font-manrope">
-            Turn your ideas into reality: host your own event from any city, for
-            a global audience.
-          </p>
-          <p className="text-xl font-normal font-manrope">
-            Our platform connects creators, communities, and talent without
-            borders—making it easy for anyone to share, learn, and build
-            together.
+            Bring it to your city. Run a meetup or hackerspace. We provide
+            playbook, assets, weekly support. Funding available.
           </p>
         </span>
         <a

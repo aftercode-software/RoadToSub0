@@ -38,7 +38,7 @@ export default function Timeline() {
       ctaLabel: "Claim your spot",
       ctaHref: "https://sub0.gg/",
       variant: "logo",
-      logoSrc: "/sub0-logo.svg",
+      logoSrc: "/sub0_logo.svg",
       accent: "pink",
     },
   ];

@@ -33,7 +33,6 @@ export default function RoadmapTimeline({ items, className }: Props) {
         trigger: ".roadmap-timeline-heading",
         start: "top 80%",
         end: "bottom 80%",
-        toggleActions: "play none none reverse",
       },
     });
     tl.from(".border-dashed-timeline", {
@@ -60,7 +59,9 @@ export default function RoadmapTimeline({ items, className }: Props) {
   return (
     <section
       aria-labelledby="roadmap-timeline-heading"
-      className={`w-full ${className || ""} mt-40 roadmap-timeline-heading`}
+      className={`w-full ${
+        className || ""
+      } mt-20 md:mt-40 roadmap-timeline-heading`}
     >
       <div className="relative w-full lg:h-[360px]">
         <ol
