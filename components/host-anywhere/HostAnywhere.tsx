@@ -71,7 +71,7 @@ export default function HostAnywhere() {
         <h2 className="text-4xl font-normal text-radical-red mt-20 md:mt-0 host-title">
           Host Your Event <b>Anywhere</b>
         </h2>
-        <span className="host-description">
+        <span className="host-description text-white">
           <p className="text-xl font-normal font-manrope">
             Turn your ideas into reality: host your own event from any city, for
             a global audience.

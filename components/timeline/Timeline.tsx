@@ -68,7 +68,7 @@ export default function Timeline() {
     >
       <Container className="flex flex-col items-center ">
         <h2 className="mt-12 font-display leading-[0.95] max-w-5xl text-center flex md:flex-row flex-col gap-4">
-          <span className="block text-3xl sm:text-4xl md:text-5xl">
+          <span className="block text-3xl sm:text-4xl md:text-5xl text-white">
             The <b>Roadmap</b>
           </span>
         </h2>
