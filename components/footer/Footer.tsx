@@ -3,7 +3,7 @@ import MetricHero from "../hero/MetricHero";
 
 export default function Footer() {
   return (
-    <footer className="bg-black/90 border-t border-green-500/20 text-white mt-10">
+    <footer className="bg-black/90 border-t border-green-500/20 text-white mt-20">
       <Container className="py-10">
         {/* Main Footer Content */}
         <div className="flex flex-col md:flex-row justify-between items-start gap-8 mb-12">
