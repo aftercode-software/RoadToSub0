@@ -6,7 +6,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Sub0 Competition - Road to Sub0",
   description:
-    "Join the ultimate Substrate and Polkadot developer competition. Build innovative blockchain solutions, compete with the best developers worldwide, and win amazing prizes. Road to Sub0 is your gateway to the decentralized future.",
+    "Make your idea come to life. Join three hackathons, win prizes, and showcase at sub0 — the biggest Polkadot event in front of global experts.",
   keywords:
     "Sub0, Substrate, Polkadot, blockchain competition, developer contest, Web3, decentralized applications, smart contracts, parachain development, cryptocurrency, blockchain innovation",
   openGraph: {
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: "Road to Sub0",
     images: [
       {
-        url: "https://roadtosub0.com/og-image.png",
+        url: "https://roadtosub0.com/og-image.webp",
         width: 1200,
         height: 630,
         alt: "Sub0 Competition Banner",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: "Sub0 Competition - Road to Sub0",
     description:
       "Join the ultimate Substrate and Polkadot developer competition. Build innovative blockchain solutions and win amazing prizes.",
-    images: ["https://roadtosub0.com/twitter-image.png"],
+    images: ["https://roadtosub0.com/og-image.webp"],
   },
 };
 export default function Home() {
