@@ -1,3 +1,4 @@
+import Footer from "@/components/footer/Footer";
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import localFont from "next/font/local";
@@ -31,6 +32,7 @@ export default function RootLayout({
         className={`${unbounded.className} ${manrope.variable} antialiased`}
       >
         {children}
+        <Footer />
       </body>
     </html>
   );
