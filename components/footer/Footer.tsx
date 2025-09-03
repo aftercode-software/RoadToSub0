@@ -41,28 +41,12 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Stats Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-8 border-t border-b border-green-500/10 mb-8">
-          <div className="text-center">
-            <MetricHero text="+40" subtitle="countries" glowing marginTop />
-          </div>
-          <div className="text-center">
-            <MetricHero
-              text="+100K"
-              subtitle="creative ideas"
-              glowing
-              marginTop
-            />
-          </div>
-          <div className="text-center">
-            <MetricHero text="3" subtitle="hackathons" glowing marginTop />
-          </div>
-        </div>
-
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-sm text-gray-400">
-            <span>© 2024 Road to Sub0. All rights reserved.</span>
+            <span className="text-center sm:text-left">
+              © 2024 Road to Sub0. All rights reserved.
+            </span>
             <div className="flex space-x-4">
               <span>
                 Built by{" "}

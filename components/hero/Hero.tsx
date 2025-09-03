@@ -62,7 +62,7 @@ export default function Hero() {
 
   return (
     <div
-      className="w-full min-h-[90dvh] bg-cover bg-center bg-no-repeat hero-bg"
+      className="w-full min-h-[80dvh] bg-cover bg-center bg-no-repeat hero-bg"
       id="hero"
       style={{
         background:
@@ -71,7 +71,7 @@ export default function Hero() {
         backgroundPosition: "center",
       }}
     >
-      <Container className="flex flex-col items-center pt-50 md:pt-60 gap-10">
+      <Container className="flex flex-col items-center pt-40 md:pt-60 gap-10">
         <h1 className="font-display leading-[0.95] md:max-w-6xl text-center text-white">
           <span className="block text-5xl sm:text-6xl md:text-8xl">
             <b>Ship</b> products
