@@ -1,4 +1,5 @@
 import { Container } from "@/layouts/Container";
+import MetricHero from "../hero/MetricHero";
 
 export default function Footer() {
   return (
@@ -43,16 +44,18 @@ export default function Footer() {
         {/* Stats Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-8 border-t border-b border-green-500/10 mb-8">
           <div className="text-center">
-            <div className="text-3xl font-bold text-green-400">+40</div>
-            <div className="text-gray-400 text-sm">countries</div>
+            <MetricHero text="+40" subtitle="countries" glowing marginTop />
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-green-400">+100K</div>
-            <div className="text-gray-400 text-sm">creative ideas</div>
+            <MetricHero
+              text="+100K"
+              subtitle="creative ideas"
+              glowing
+              marginTop
+            />
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-green-400">3</div>
-            <div className="text-gray-400 text-sm">hackathons</div>
+            <MetricHero text="3" subtitle="hackathons" glowing marginTop />
           </div>
         </div>
 
