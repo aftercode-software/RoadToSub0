@@ -67,7 +67,7 @@ export default function HostAnywhere() {
 
   return (
     <Container className="flex items-center justify-center gap-10 relative md:h-[80vh] mt-20 host-trigger">
-      <div className="host-card flex flex-col items-center justify-center md:p-20 gap-10 z-10 md:bg-black/10 md:backdrop-blur-sm md:max-w-[60%] text-center rounded-2xl border-2 border-radical-red/30">
+      <div className="host-card flex flex-col items-center justify-center md:p-20 gap-10 z-10 md:bg-black/10 md:backdrop-blur-sm md:max-w-[60%] text-center rounded-2xl md:border-2 border-radical-red/30">
         <h2 className="text-4xl font-normal text-radical-red mt-20 md:mt-0 host-title">
           Host Your Event <b>Anywhere</b>
         </h2>
@@ -82,7 +82,15 @@ export default function HostAnywhere() {
             together.
           </p>
         </span>
-        <button className="host-button">placeholder-button</button>
+        <a
+          href={"#"}
+          className={`
+                mt-8 inline-flex w-full items-center justify-center rounded-xl px-4 py-3 text-xl font-bold
+                bg-[rgba(24,24,24,0.71)] border focus:outline-none focus-visible:ring-2 hover:bg-[rgba(24,24,24,0.85)]
+                text-radical-red-500 border-radical-red-500 ring-radical-red-500/30`}
+        >
+          Be a host
+        </a>
       </div>
       <img
         src="/host-anywhere/map.svg"

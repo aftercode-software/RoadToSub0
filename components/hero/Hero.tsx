@@ -23,7 +23,7 @@ export default function Hero() {
         duration: 1,
         ease: "power4.out",
       },
-      "<+0.5"
+      "<+1"
     );
     tl.from(
       ".hero-description",
@@ -63,6 +63,7 @@ export default function Hero() {
   return (
     <div
       className="w-full min-h-[90dvh] bg-cover bg-center bg-no-repeat hero-bg"
+      id="hero"
       style={{
         background:
           'linear-gradient(180deg,rgba(0, 0, 0, 0) 0%, rgba(21, 21, 21, 0.4) 80%, rgba(21, 21, 21, 1) 100%), url("/backgrounds/hero.webp")',
@@ -92,7 +93,7 @@ export default function Hero() {
 
         <EmailForm className="hero-email-form" />
 
-        <div className="mt-10 flex w-full max-w-3xl justify-center gap-8 md:gap-20 md:mt-14">
+        <div className="mt-10 flex w-full max-w-3xl justify-center gap-8 md:gap-20 md:mt-14 hero-metrics">
           <MetricHero text="+100K" subtitle="for creative ideas" glowing />
         </div>
       </Container>

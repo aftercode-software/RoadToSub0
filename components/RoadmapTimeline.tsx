@@ -88,7 +88,11 @@ export default function RoadmapTimeline({ items, className }: Props) {
                     : "lg:self-center"
                 }
                 ${item.variant === "start" ? "lg:flex lg:justify-start" : ""}
-                ${item.variant === "logo" ? "lg:flex lg:justify-end" : ""}
+                ${
+                  item.variant === "logo"
+                    ? "justify-center flex lg:justify-end"
+                    : ""
+                }
                 `}
             >
               <Card item={item} />
@@ -217,7 +221,6 @@ function Card({ item }: { item: TimelineItem }) {
             p-6 h-full w-full flex flex-col
             lg:min-h-[380px] 
             min-h-[340px]
-
         "
       >
         {item.title && (

@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #151515;
+  --foreground: rgb(21, 21, 21);
 }
 
 @theme inline {
@@ -46,12 +46,13 @@
 }
 
 body {
-  background: var(--background);
+  background: linear-gradient(rgba(21, 21, 21, 0.6), rgba(21, 21, 21, 0.6)),
+    rgba(21, 21, 21, 1) url("/backgrounds/noise.png");
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
