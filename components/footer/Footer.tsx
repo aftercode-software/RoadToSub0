@@ -68,14 +68,14 @@ export default function Footer() {
                 Built by{" "}
                 <a
                   href="https://aftercode.dev"
-                  className="hover:text-radical-red transition-colors"
+                  className="text-radical-red transition-colors"
                 >
                   Aftercode{" "}
                 </a>
                 and{" "}
                 <a
                   href="https://nerdconf.com"
-                  className="hover:text-radical-red transition-colors"
+                  className="text-green transition-colors"
                 >
                   Nerdconf
                 </a>

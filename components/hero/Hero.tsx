@@ -23,7 +23,7 @@ export default function Hero() {
         duration: 1,
         ease: "power4.out",
       },
-      "<+0.5"
+      "<+1"
     );
     tl.from(
       ".hero-description",
@@ -63,6 +63,7 @@ export default function Hero() {
   return (
     <div
       className="w-full min-h-[90dvh] bg-cover bg-center bg-no-repeat hero-bg"
+      id="hero"
       style={{
         background:
           'linear-gradient(180deg,rgba(0, 0, 0, 0) 0%, rgba(21, 21, 21, 0.4) 80%, rgba(21, 21, 21, 1) 100%), url("/backgrounds/hero.webp")',
@@ -73,21 +74,26 @@ export default function Hero() {
       <Container className="flex flex-col items-center pt-50 md:pt-60 gap-10">
         <h1 className="font-display leading-[0.95] md:max-w-6xl text-center text-white">
           <span className="block text-5xl sm:text-6xl md:text-8xl">
-            ship products{" "}
+            <b>Ship</b> products
           </span>
-          <span className="block text-5xl font-bold sm:text-6xl md:text-8xl">
-            solve problems
+          <span className="block text-5xl sm:text-6xl md:text-8xl">
+            <b>Solve</b> problems
           </span>
         </h1>
 
-        <p className="font-body max-w-2xl font-manrope text-base text-center text-white/85 sm:text-xl md:max-w-3xl">
-          One journey, three hackathons. Compete, lauch your demo, and win cash
-          prizes to keep building on Polkadot.
+        <p className="font-body max-w-2xl font-manrope text-base text-center text-white/85 sm:text-lg md:max-w-3xl hero-description">
+          One journey, three hackathons.{" "}
+          <span className="font-bold">
+            Compete, lauch your demo, and win cash prizes to{" "}
+          </span>{" "}
+          <span className="font-bold font-unbounded">
+            keep building on Polkadot.
+          </span>
         </p>
 
         <EmailForm className="hero-email-form" />
 
-        <div className="mt-10 flex w-full max-w-3xl justify-center gap-8 md:gap-20 md:mt-14">
+        <div className="mt-10 flex w-full max-w-3xl justify-center gap-8 md:gap-20 md:mt-14 hero-metrics">
           <MetricHero text="+100K" subtitle="for creative ideas" glowing />
         </div>
       </Container>
