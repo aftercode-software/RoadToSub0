@@ -70,8 +70,8 @@ export default function Hero() {
         backgroundPosition: "center",
       }}
     >
-      <Container className="flex flex-col items-center pt-50 gap-10">
-        <h1 className="font-display leading-[0.95] max-w-6xl text-center hero-title">
+      <Container className="flex flex-col items-center pt-50 md:pt-60 gap-10">
+        <h1 className="font-display leading-[0.95] md:max-w-6xl text-center text-white">
           <span className="block text-5xl sm:text-6xl md:text-8xl">
             <b>Ship</b> products
           </span>
@@ -92,12 +92,11 @@ export default function Hero() {
 
         <EmailForm className="hero-email-form" />
 
-        <div className="mt-10 flex w-full max-w-3xl justify-center gap-8 md:gap-20 md:mt-14 hero-metrics">
-          <MetricHero text="+40" subtitle="countries" glowing marginTop />
+        <div className="mt-10 flex w-full max-w-3xl justify-center gap-8 md:gap-20 md:mt-14">
           <MetricHero text="+100K" subtitle="for creative ideas" glowing />
-          <MetricHero text="3" subtitle="hackathons" glowing marginTop />
         </div>
       </Container>
+      <span id="roadmap" />
     </div>
   );
 }
