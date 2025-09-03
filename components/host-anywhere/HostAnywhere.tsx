@@ -66,7 +66,7 @@ export default function HostAnywhere() {
   });
 
   return (
-    <Container className="flex items-center justify-center gap-10 relative md:h-[80vh] mt-20 host-trigger">
+    <Container className="flex items-center justify-center gap-10 relative md:h-[80vh] mt-20 host-trigger overflow-hidden">
       <div className="host-card flex flex-col items-center justify-center md:p-20 gap-10 z-10 md:bg-black/10 md:backdrop-blur-sm md:max-w-[60%] text-center rounded-2xl md:border-2 border-radical-red/30">
         <h2 className="text-4xl font-normal text-radical-red mt-20 md:mt-0 host-title">
           Host Your Event <b>Anywhere</b>
@@ -95,7 +95,7 @@ export default function HostAnywhere() {
       <img
         src="/host-anywhere/map.svg"
         alt=""
-        className="host-map absolute top-0 md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 w-full"
+        className="host-map absolute top-0 left-0 w-full h-full object-contain object-left-top"
         draggable={false}
       />
     </Container>
