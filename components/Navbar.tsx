@@ -8,15 +8,15 @@ export default function Navbar() {
         <img src="/logos/logo.webp" alt="Logo" className="w-24 md:w-32" />
         <section>
           <a
-            href="https://sub0.gg"
-            target="_blank"
-            className="select-none rounded-xl px-3 py-3 font-semibold
-                     bg-pink-600/80 text-white shadow-lg ring-1 ring-black/10
-                     hover:bg-pink-500 transition
-                     disabled:opacity-60 disabled:cursor-not-allowed
-                     sm:min-w-[220px]"
+            href="#roadmap"
+            className={`
+                inline-flex w-full items-center justify-center rounded-xl px-4 py-3 text-xl font-bold
+                bg-[rgba(24,24,24,0.71)] border focus:outline-none focus-visible:ring-2 hover:bg-[rgba(24,24,24,0.85)]
+                text-green-500 border-green-500 ring-green-500/30
+                scroll-smooth
+                `}
           >
-            What is sub0?
+            What is Sub0
           </a>
         </section>
       </Container>

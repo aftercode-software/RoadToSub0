@@ -3,7 +3,7 @@
 import { createClient } from "@/utils/supabase/client";
 import { FormEvent, useState } from "react";
 
-export default function EmailForm() {
+export default function EmailForm({ className }: { className?: string }) {
   const supabase = createClient();
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
@@ -36,7 +36,7 @@ export default function EmailForm() {
   return (
     <form
       onSubmit={onSubmit}
-      className={`w-full max-w-3xl rounded-2xl p-2 backdrop-blur
+      className={`w-full max-w-3xl rounded-2xl p-2 backdrop-blur ${className}
                   bg-white/5 ring-1 ring-white/10 shadow-[0_0_0_1px_rgba(0,0,0,.25)]
                   `}
     >
@@ -78,12 +78,16 @@ export default function EmailForm() {
           type="submit"
           disabled={loading}
           className="select-none rounded-xl px-6 py-3 font-semibold
-                     bg-pink-600 text-white shadow-lg ring-1 ring-black/10
-                     hover:bg-pink-500 transition
+                     bg-radical-red text-white shadow-lg ring-1 ring-black/10
+                     hover:bg-radical-red/20 transition
+                     cursor-pointer
+                     hover:ring-2
+                     hover:text-radical-red
+                     hover:ring-radical-red
                      disabled:opacity-60 disabled:cursor-not-allowed
                      sm:min-w-[220px]"
         >
-          {loading ? "Enviando..." : "Claim Your Spot"}
+          {loading ? "Sending..." : "Claim Your Spot"}
         </button>
       </div>
     </form>
