@@ -4,7 +4,6 @@ import RoadmapTimeline, { TimelineItem } from "@/components/RoadmapTimeline";
 import { Container } from "@/layouts/Container";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import MetricHero from "../hero/MetricHero";
 
 export default function Timeline() {
   const items: TimelineItem[] = [
@@ -72,7 +71,7 @@ export default function Timeline() {
             The <b>Roadmap</b>
           </span>
         </h2>
-        <p className="mt-12 font-body max-w-2xl font-manrope text-base text-center text-white/85 sm:text-lg md:max-w-3xl hero-description">
+        <p className="mt-4 md:mt-12 font-lg max-w-2xl font-manrope text-base text-center text-white/85 sm:text-lg md:max-w-3xl hero-description">
           Start anywhere. We guide you to a demo and submission.{" "}
           <span className="font-bold">Win cash prizes along the way.</span>
         </p>
