@@ -13,7 +13,6 @@ export default function HostAnywhere() {
       scrollTrigger: {
         trigger: ".host-trigger",
         start: "top 70%",
-        markers: true,
         toggleActions: "play none none reverse",
       },
     });
@@ -68,7 +67,7 @@ export default function HostAnywhere() {
 
   return (
     <Container className="flex items-center justify-center gap-10 relative md:h-[80vh] mt-20 host-trigger">
-      <div className="host-card flex flex-col items-center justify-center md:p-20 gap-10 z-10 md:bg-black/10 md:backdrop-blur-sm md:max-w-[60%] text-center rounded-2xl">
+      <div className="host-card flex flex-col items-center justify-center md:p-20 gap-10 z-10 md:bg-black/10 md:backdrop-blur-sm md:max-w-[60%] text-center rounded-2xl border-2 border-radical-red/30">
         <h2 className="text-4xl font-normal text-radical-red mt-20 md:mt-0 host-title">
           Host Your Event <b>Anywhere</b>
         </h2>

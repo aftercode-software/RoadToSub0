@@ -79,10 +79,10 @@ export default function EmailForm({ className }: { className?: string }) {
           disabled={loading}
           className="select-none rounded-xl px-6 py-3 font-semibold
                      bg-radical-red text-white shadow-lg ring-1 ring-black/10
-                     hover:bg-radical-red/20 transition
+                     transition
                      cursor-pointer
                      hover:ring-2
-                     hover:text-radical-red
+                     hover:bg-radical-red/60
                      hover:ring-radical-red
                      disabled:opacity-60 disabled:cursor-not-allowed
                      sm:min-w-[220px]"
