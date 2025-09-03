@@ -74,10 +74,10 @@ export default function Hero() {
       <Container className="flex flex-col items-center pt-40 md:pt-60 gap-10">
         <h1 className="font-display leading-[0.95] md:max-w-6xl text-center text-white">
           <span className="block text-5xl sm:text-6xl md:text-8xl">
-            ship products
+            Ship products
           </span>
           <span className="block text-5xl sm:text-6xl md:text-8xl font-bold">
-            solve problems
+            Solve problems
           </span>
         </h1>
 
@@ -94,7 +94,7 @@ export default function Hero() {
         <EmailForm className="hero-email-form" />
 
         <div className=" flex w-full max-w-3xl justify-center gap-8 md:gap-20 md:mt-14 hero-metrics">
-          <MetricHero text="+100K" subtitle="for creative ideas" glowing />
+          <MetricHero text="+$100K" subtitle="for creative ideas" glowing />
         </div>
       </Container>
       <span id="roadmap" />
