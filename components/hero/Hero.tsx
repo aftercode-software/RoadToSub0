@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { Container } from "@/layouts/Container";
@@ -9,11 +10,37 @@ import MetricHero from "./MetricHero";
 export default function Hero() {
   useGSAP(() => {
     const tl = gsap.timeline();
-    tl.from(".hero-bg", {
+    tl.from(".polkadot-logo", {
       opacity: 0,
-      duration: 2,
+      scale: 0.5,
+      y: -30,
+      duration: 1,
       ease: "power4.out",
     });
+    tl.from(
+      ".mision",
+      {
+        opacity: 0,
+        scale: 0.5,
+        y: -30,
+        duration: 1,
+        ease: "power4.out",
+      },
+      "<+0.1"
+    );
+
+    tl.add("afterIntro");
+
+    tl.from(
+      ".hero-bg",
+      {
+        opacity: 0,
+        duration: 2,
+        ease: "power4.out",
+      },
+      "afterIntro+=0.1"
+    );
+
     tl.from(
       ".hero-title",
       {
@@ -25,6 +52,7 @@ export default function Hero() {
       },
       "<+0.2"
     );
+
     tl.from(
       ".hero-description",
       {
@@ -36,6 +64,7 @@ export default function Hero() {
       },
       "<+0.2"
     );
+
     tl.from(
       ".hero-email-form",
       {
@@ -47,6 +76,7 @@ export default function Hero() {
       },
       "<+0.2"
     );
+
     tl.from(
       ".hero-metrics",
       {
@@ -71,25 +101,28 @@ export default function Hero() {
         backgroundPosition: "center",
       }}
     >
-      <Container className="flex flex-col items-center pt-40 md:pt-50 gap-10">
-        <h1 className="font-display leading-[0.95] md:max-w-6xl text-center text-white hero-title">
-          <span className="block text-5xl sm:text-6xl md:text-7xl">
-            Ship products
-          </span>
-          <span className="block text-5xl sm:text-6xl md:text-7xl font-bold">
-            Solve problems
+      <Container className="flex flex-col items-center pt-40 md:pt-50 gap-6 md:gap-8">
+        <img
+          src="/logos/polkadot.svg"
+          alt="Polkadot logo"
+          className="polkadot-logo w-40 md:w-auto"
+        />
+        <p className="text-green text-lg md:text-3xl text-center mision">
+          One journey. Three hackathons
+        </p>
+        <h1 className="font-display leading-[0.95] md:max-w-7xl text-center text-white hero-title">
+          <span className="font-bold text-5xl sm:text-6xl md:text-8xl flex items-center gap-3 md:gap-6">
+            Road to
+            <img
+              src="/sub0-logo.svg"
+              alt="sub0-logo"
+              className="w-28 md:w-52"
+            />
           </span>
         </h1>
 
-        <p className="font-body max-w-2xl font-manrope text-base text-center text-white sm:text-lg md:max-w-3xl hero-description">
-          One journey, three hackathons. <br />
-          <span className="font-bold">
-            Compete, lauch your demo, and win cash prizes to{" "}
-          </span>{" "}
-          <br />
-          <span className="font-bold font-unbounded">
-            keep building on Polkadot.
-          </span>
+        <p className="font-medium max-w-2xl font-manrope text-base text-center text-white sm:text-xl md:max-w-md hero-description">
+          Complete, launch and win cash prizes to keep building on Polkadot
         </p>
 
         <EmailForm className="hero-email-form" />

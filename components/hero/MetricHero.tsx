@@ -12,13 +12,9 @@ export default function MetricHero({
   marginTop = false,
 }: ComponentProps) {
   return (
-    <div
-      className={`text-center animate-pulse ${
-        marginTop ? " mt-4 md:mt-0 " : ""
-      }`}
-    >
+    <div className={`text-center  ${marginTop ? " mt-4 md:mt-0 " : ""}`}>
       <div
-        className={`font-display text-3xl font-bold sm:text-4xl md:text-5xl text-green ${
+        className={`font-display text-4xl animate-pulse font-bold sm:text-4xl md:text-6xl text-green ${
           glowing ? "drop-shadow-[0_4px_8px_rgba(34,197,94,0.5)]" : ""
         }`}
       >
