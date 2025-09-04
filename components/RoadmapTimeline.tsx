@@ -116,7 +116,7 @@ function Card({ item }: { item: TimelineItem }) {
         className="
            flex w-[160px] items-start justify-center
         rounded-xl border-[3px] border-dotted border-white/75
-        bg-[rgba(24,24,24,0.71)] px-4 py-3
+        bg-[#15143A] px-4 py-3
         text-white/90 backdrop-blur-sm
         mx-auto md:mx-0
         "
@@ -134,7 +134,7 @@ function Card({ item }: { item: TimelineItem }) {
           <span
             className="
               absolute -top-7 left-1/2 -translate-x-1/2 rounded-md border border-white/75
-              bg-black/55 px-3 py-1 text-xs font-semibold tracking-wider text-white shadow-md
+              bg-[#15143A] px-3 py-1 text-xs font-semibold tracking-wider text-white shadow-md
             "
           >
             {item.dateLabel}
@@ -143,7 +143,7 @@ function Card({ item }: { item: TimelineItem }) {
         <article
           className="
             rounded-2xl border border-[#6E6E6E]/[.32]
-            bg-[rgba(24,24,24,0.71)] backdrop-blur-xl
+            bg-[#15143A] backdrop-blur-xl
             p-6 text-center
           "
         >
@@ -162,7 +162,7 @@ function Card({ item }: { item: TimelineItem }) {
               href={item.ctaHref}
               className={`
                 mt-8 inline-flex w-full items-center justify-center rounded-xl px-4 py-3 text-xl font-bold
-                bg-[rgba(24,24,24,0.71)] border focus:outline-none focus-visible:ring-2 hover:bg-[rgba(24,24,24,0.85)]
+                bg-[#15143A] border focus:outline-none focus-visible:ring-2 hover:bg-[rgba(24,24,24,0.85)]
                 ${
                   isGreen
                     ? "text-green-500 border-green-500 ring-green-500/30"
@@ -190,7 +190,7 @@ function Card({ item }: { item: TimelineItem }) {
         <span
           className="
             absolute md:-top-14 -top-12  rounded-xl border border-white/60
-            bg-black/55 px-5 py-2 text-xs md:text-base font-extrabold tracking-wider text-white shadow-md
+            bg-[#15143A] px-5 py-2 text-xs md:text-base font-extrabold tracking-wider text-white shadow-md
           "
         >
           {item.dateLabel}
@@ -201,8 +201,8 @@ function Card({ item }: { item: TimelineItem }) {
         <span
           className={`
                 absolute -top-5 -right-5 z-10 rounded-lg px-4 py-1.5
-                text-2xl font-black
-                bg-[rgba(24,24,24,0.71)] border shadow-[0_4px_20px_rgba(0,0,0,0.35)]
+                text-2xl font-bold
+                bg-[#15143A] border shadow-[0_4px_20px_rgba(0,0,0,0.35)]
                 ${isGreen ? "text-green-500 border-green-500/35" : ""}
                 ${
                   isPink ? "text-radical-red-500 border-radical-red-500/35" : ""
@@ -218,7 +218,7 @@ function Card({ item }: { item: TimelineItem }) {
         aria-label={item.title}
         className="
             rounded-2xl border border-[#6E6E6E]/[.32]
-            bg-[rgba(24,24,24,0.71)] backdrop-blur-xl
+            bg-[#15143A] backdrop-blur-xl
             p-6 h-full w-full flex flex-col
             lg:min-h-[380px] 
             min-h-[340px]
@@ -248,7 +248,7 @@ function Card({ item }: { item: TimelineItem }) {
             className={`
             mt-auto inline-flex items-center justify-center rounded-xl px-5 py-3
             text-xl font-bold
-            bg-[rgba(24,24,24,0.71)] hover:bg-[rgba(24,24,24,0.85)]
+            bg-[#15143A] hover:bg-[rgba(24,24,24,0.85)]
             border focus:outline-none focus-visible:ring-2
             ${
               isGreen ? "text-green-500 border-green-500 ring-green-500/30" : ""

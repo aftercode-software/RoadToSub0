@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: rgb(21, 21, 21);
+  --foreground: oklch(0.1965 0.1316 265.74);
 }
 
 @theme inline {
@@ -10,6 +10,8 @@
   --color-foreground: var(--foreground);
   --font-manrope: var(--font-manrope);
   --font-unbounded: var(--font-unbounded), ui-sans-serif, system-ui, sans-serif;
+
+  --color-blue:oklch(0.1965 0.1316 265.74);
 
   --color-green: oklch(86.644% 0.29483 142.5);
   --color-green-50: oklch(93.54% 0.11827 144.56);
@@ -40,14 +42,14 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #151515;
+    --background: #02014F;
     --foreground: #ededed;
   }
 }
 
 body {
-  background: linear-gradient(rgba(21, 21, 21, 0.6), rgba(21, 21, 21, 0.6)),
-    rgba(21, 21, 21, 1) url("/backgrounds/noise.webp");
+  background: linear-gradient(oklch(0.1965 0.1316 265.74), oklch(0.1965 0.1316 265.74)),
+    oklch(0.1965 0.1316 265.74) url("/backgrounds/noise.webp");
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;

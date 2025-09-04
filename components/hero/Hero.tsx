@@ -96,7 +96,7 @@ export default function Hero() {
       id="hero"
       style={{
         background:
-          'linear-gradient(180deg,rgba(255, 255, 255, 0) 0%, rgba(21, 21, 21, 0.2) 70%, rgba(21, 21, 21, 1) 100%), url("/backgrounds/hero-2.webp")',
+          'linear-gradient(180deg,rgba(255, 255, 255, 0) 0%, oklch(0.1965 0.1316 265.74 / 0.2) 70%, oklch(0.1965 0.1316 265.74) 100%), url("/backgrounds/hero-2.webp")',
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

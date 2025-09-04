@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <div
       className={`w-full fixed top-0 py-8 z-40 transition-all duration-500 ${
-        scrollY > 20 ? "bg-black/30 backdrop-blur-xl " : "bg-none"
+        scrollY > 20 ? "bg-[#15143A]/30 backdrop-blur-xl " : "bg-none"
       } `}
     >
       <Container className="flex justify-between items-center">
@@ -27,7 +27,7 @@ export default function Navbar() {
             href="#roadmap"
             className={`
               inline-flex w-full items-center justify-center rounded-xl px-4 py-3 text-md font-bold
-              bg-[rgba(24,24,24,0.71)] border focus:outline-none focus-visible:ring-2 hover:bg-[rgba(24,24,24,0.85)]
+              bg-[15143A] border focus:outline-none focus-visible:ring-2 hover:bg-[15143A]
               text-green-500 border-green-500 ring-green-500/30 transition-all duration-500 
          ${scrollY > 20 ? "opacity-100" : "opacity-0"}
               `}
