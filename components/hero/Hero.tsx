@@ -4,10 +4,14 @@
 import { Container } from "@/layouts/Container";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { useState } from "react";
+import GridDistortion from "../ui/shadcn-io/grid-distortion";
 import EmailForm from "./EmailForm";
 import MetricHero from "./MetricHero";
 
 export default function Hero() {
+  const isMobile = window.innerWidth < 768;
+
   useGSAP(() => {
     const tl = gsap.timeline();
     tl.from(".polkadot-logo", {
@@ -92,7 +96,7 @@ export default function Hero() {
 
   return (
     <div
-      className="w-full min-h-[90dvh] bg-cover bg-center bg-no-repeat hero-bg"
+      className="w-full min-h-[100dvh] md:min-h-[90dvh] flex items-center justify-center bg-cover bg-center bg-no-repeat hero-bg"
       id="hero"
       style={{
         background:
@@ -101,7 +105,26 @@ export default function Hero() {
         backgroundPosition: "center",
       }}
     >
-      <Container className="flex flex-col items-center pt-40 md:pt-50 gap-6 md:gap-8">
+      {!isMobile && (
+        <div>
+          <GridDistortion
+            className="w-full h-full absolute top-0 left-0"
+            imageSrc="/backgrounds/hero-2.webp"
+            grid={20}
+            mouse={0.1}
+            strength={0.5}
+            relaxation={0.5}
+          />
+          <div
+            className="w-full h-[200px] absolute bottom-0 left-0"
+            style={{
+              background:
+                "linear-gradient(180deg,rgba(255, 255, 255, 0) 0%, oklch(0.1965 0.1316 265.74 / 0.2) 20%, oklch(0.1965 0.1316 265.74) 100%)",
+            }}
+          ></div>
+        </div>
+      )}
+      <Container className="flex flex-col items-center gap-6 md:gap-8 py-20">
         <img
           src="/logos/polkadot.svg"
           alt="Polkadot logo"
@@ -110,15 +133,11 @@ export default function Hero() {
         <p className="text-green text-lg md:text-3xl text-center mision">
           One journey. Three hackathons
         </p>
-        <h1 className="font-display leading-[0.95] md:max-w-7xl text-center text-white hero-title">
-          <span className="font-bold text-5xl sm:text-6xl md:text-8xl flex items-center gap-3 md:gap-6">
-            Road to
-            <img
-              src="/sub0-logo.svg"
-              alt="sub0-logo"
-              className="w-28 md:w-52"
-            />
+        <h1 className="font-display leading-[0.95] md:max-w-7xl text-center text-white hero-title flex flex-col md:flex-row items-center justify-center gap-2 md:gap-6">
+          <span className="font-bold text-6xl sm:text-6xl md:text-8xl flex items-center gap-3 md:gap-6">
+            Road to <span className="hidden">sub0</span>
           </span>
+          <img src="/sub0-logo.svg" alt="sub0-logo" className="w-32 md:w-52" />
         </h1>
 
         <p className="font-medium max-w-2xl font-manrope text-base text-center text-white sm:text-xl md:max-w-md hero-description">

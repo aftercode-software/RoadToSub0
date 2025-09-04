@@ -21,7 +21,7 @@ export default function CountDownSection({
   target: string | number | Date;
 }) {
   return (
-    <Container className="flex justify-center flex-col gap-2 min-h-[80dvh] items-center">
+    <Container className="flex justify-center flex-col gap-2 py-20 items-center">
       <Countdown target={target} />
       <h2 className="text-4xl mt-10 text-center md:text-5xl font-normal flex flex-col z-10 text-white">
         <span>

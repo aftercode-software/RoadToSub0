@@ -66,7 +66,7 @@ export default function HostAnywhere() {
   });
 
   return (
-    <Container className="flex items-center justify-center gap-10 relative md:h-[80vh] mt-20 host-trigger overflow-hidden">
+    <Container className="flex items-center justify-center gap-10 relative py-20 host-trigger overflow-hidden">
       <div className="host-card flex flex-col items-center justify-center md:p-20 gap-10 z-10 md:max-w-[60%] text-center">
         <h2 className="text-4xl md:text-5xl font-normal flex flex-col text-white mt-20 md:mt-0 host-title">
           Host Your Event <b className="text-radical-red">Anywhere</b>
