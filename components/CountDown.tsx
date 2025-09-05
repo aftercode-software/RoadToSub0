@@ -61,13 +61,14 @@ export default function CountDownSection({
       <Countdown target={target} />
       <h2 className="text-4xl mt-10 text-center md:text-5xl font-normal flex flex-col z-10 text-white countdown-title">
         <span>
-          <b>Connect</b> now,{" "}
+          Your <b>journey</b>{" "}
         </span>
-        <b className="mt-1">Stay informed</b>
+        <span>
+          begins <b className="mt-1">here</b>
+        </span>
       </h2>
       <p className="mt-4 font-lg max-w-2xl mb-10 font-manrope text-base text-center text-white/85 sm:text-lg z-10 md:max-w-md countdown-description">
-        We’ll only send updates when they’re relevant — no noise, just what
-        matters.
+        Sign up for free and find out how to participate.
       </p>
       <EmailForm className="countdown-email-form" />
     </Container>

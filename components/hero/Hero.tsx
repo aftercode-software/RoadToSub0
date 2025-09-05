@@ -81,30 +81,11 @@ export default function Hero() {
       id="hero"
       style={{
         background:
-          'linear-gradient(180deg,rgba(255, 255, 255, 0) 0%, oklch(0.1965 0.1316 265.74 / 0.2) 70%, oklch(0.1965 0.1316 265.74) 100%), url("/backgrounds/hero-2.webp")',
+          'linear-gradient(180deg,rgba(255, 255, 255, 0) 0%, oklch(0.1965 0.1316 265.74 / 0.2) 80%, oklch(0.1965 0.1316 265.74) 100%), url("/backgrounds/hero-2.webp")',
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      {!isMobile && (
-        <div>
-          <GridDistortion
-            className="w-full h-full absolute top-0 left-0"
-            imageSrc="/backgrounds/hero-2.webp"
-            grid={20}
-            mouse={0.1}
-            strength={0.5}
-            relaxation={0.5}
-          />
-          <div
-            className="w-full h-[200px] absolute bottom-0 left-0"
-            style={{
-              background:
-                "linear-gradient(180deg,rgba(255, 255, 255, 0) 0%, oklch(0.1965 0.1316 265.74 / 0.2) 20%, oklch(0.1965 0.1316 265.74) 100%)",
-            }}
-          ></div>
-        </div>
-      )}
       <Container className="flex flex-col items-center gap-6 md:gap-8 py-20">
         <img
           src="/logos/polkadot.svg"

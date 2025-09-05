@@ -53,11 +53,13 @@ export default function HostAnywhere() {
     <Container className="flex items-center justify-center gap-10 relative py-20 host-trigger overflow-hidden">
       <div className="host-card flex flex-col items-center justify-center md:p-20 gap-10 z-10 md:max-w-[60%] text-center">
         <h2 className="text-4xl md:text-5xl font-normal flex flex-col text-white mt-20 md:mt-0 host-title">
-          Events <b className="text-radical-red">Everywhere!</b>
+          Meet <b className="text-radical-red">Worldwide</b> Builders
         </h2>
         <span className="host-description text-white">
           <p className="text-xl font-normal font-manrope">
-            Discover the Polkadot DAO at community powered hubs everywhere!
+            From Argentina to Belgium to China, join the Road to Sub0 meetups
+            where builders connect, share ideas and team up to participate in
+            the Sub0 hackathons.
           </p>
         </span>
         <a

@@ -15,7 +15,7 @@ export default function Timeline() {
       title: "Latin Hack",
       description:
         "Starting line in LATAM. Welcome first-timers and seniors, with tracks that reward simple, working prototypes.",
-      ctaLabel: "Claim your spot",
+      ctaLabel: "Register now",
       ctaHref: "#hero",
       variant: "event",
       accent: "green",
@@ -26,8 +26,8 @@ export default function Timeline() {
       prize: "$40K",
       title: "Global Builder Party",
       description:
-        "Global online hackathon that raises the bar with Polkadot 2.0 topics.",
-      ctaLabel: "Claim your spot",
+        "Global online hackathon that puts your skills to the test with the latest Polkadot tech.",
+      ctaLabel: "Register now",
       ctaHref: "#hero",
       variant: "event",
       accent: "pink",
@@ -35,9 +35,11 @@ export default function Timeline() {
     {
       id: "sub0",
       title: "sub0",
-      ctaLabel: "Claim your spot",
+      ctaLabel: "Register now",
       ctaHref: "https://sub0.gg/",
       variant: "logo",
+      description:
+        "Biggest Polkadot event of the year. Builders, experts and communities all in together in Buenos Aires. Don’t miss it.",
       logoSrc: "/logos/sub0-white.svg",
       accent: "pink",
     },

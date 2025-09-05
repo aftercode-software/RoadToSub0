@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import CountDownSection from "@/components/CountDown";
 import Timeline from "@/components/timeline/Timeline";
+import WhatIsSub0 from "@/components/WhatIsSub0";
 import Hero from "../components/hero/Hero";
 import HostAnywhere from "../components/host-anywhere/HostAnywhere";
 
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
 
       <Timeline />
+      <WhatIsSub0 />
       <section
         className="w-full min-h-screen relative pb-20"
         style={{

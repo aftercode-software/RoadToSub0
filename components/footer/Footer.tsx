@@ -11,7 +11,13 @@ export default function Footer() {
             <div className="flex items-center space-x-2">
               <span className="text-2xl font-bold">Road to</span>
             </div>
-            <div className="text-3xl font-bold text-green-400">sub 0</div>
+            <div className="text-3xl font-bold text-green-400">
+              <img
+                src="/logos/sub0-green.svg"
+                alt="sub0-logo"
+                className="w-20 md:w-24"
+              />
+            </div>
             <p className="text-gray-400 text-md leading-relaxed max-w-md font-manrope mt-2">
               Building the future of decentralized innovation through
               collaborative hackathons and global community events.

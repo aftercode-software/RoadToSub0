@@ -157,6 +157,11 @@ function Card({ item }: { item: TimelineItem }) {
               priority
             />
           </div>
+          {item.description && (
+            <p className="mt-3 max-w-[46ch] text-[15px] leading-relaxed text-white/75">
+              {item.description}
+            </p>
+          )}
           {item.ctaHref && item.ctaLabel && (
             <a
               href={item.ctaHref}
