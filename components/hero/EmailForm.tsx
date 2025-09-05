@@ -91,7 +91,7 @@ export default function EmailForm({ className }: { className?: string }) {
                      disabled:opacity-60 disabled:cursor-not-allowed
                      sm:min-w-[220px]"
           >
-            {loading ? "Sending..." : "Claim Your Spot"}
+            {loading ? "Sending..." : "Register now"}
           </button>
         </div>
       ) : (
