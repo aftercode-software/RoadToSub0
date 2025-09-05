@@ -36,25 +36,47 @@ export default function CountDownSection({
       duration: 0.5,
       ease: "power4.out",
     });
-    tl.from(".countdown-title", {
-      opacity: 0,
-      y: 50,
-      duration: 0.5,
-      ease: "power4.out",
-    });
+    tl.from(
+      ".countdown-title",
+      {
+        opacity: 0,
+        y: 50,
+        duration: 0.5,
+        ease: "power4.out",
+      },
+      "<+0.1"
+    );
 
-    tl.from(".countdown-description", {
-      opacity: 0,
-      y: 50,
-      duration: 0.5,
-      ease: "power4.out",
-    });
-    tl.from(".countdown-email-form", {
-      opacity: 0,
-      y: 50,
-      duration: 0.5,
-      ease: "power4.out",
-    });
+    tl.from(
+      ".countdown-description",
+      {
+        opacity: 0,
+        y: 50,
+        duration: 0.5,
+        ease: "power4.out",
+      },
+      "<+0.1"
+    );
+    tl.from(
+      ".countdown-email-form",
+      {
+        opacity: 0,
+        y: 50,
+        duration: 0.5,
+        ease: "power4.out",
+      },
+      "<+0.1"
+    );
+    tl.from(
+      ".countdown-form-description",
+      {
+        opacity: 0,
+        y: 50,
+        duration: 0.5,
+        ease: "power4.out",
+      },
+      "<+0.1"
+    );
   });
   return (
     <Container className="flex justify-center flex-col gap-2 py-20 items-center countdown-container">
@@ -71,6 +93,9 @@ export default function CountDownSection({
         Sign up for free and find out how to participate.
       </p>
       <EmailForm className="countdown-email-form" />
+      <p className="mt-4 font-lg mb-10 font-manrope text-base text-center text-white/65 sm:text-lg z-10 countdown-form-description">
+        We’ll keep it simple — only Road to Sub0 updates, nothing extra.
+      </p>
     </Container>
   );
 }
