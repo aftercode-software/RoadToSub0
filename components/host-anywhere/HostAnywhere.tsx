@@ -13,31 +13,15 @@ export default function HostAnywhere() {
       scrollTrigger: {
         trigger: ".host-trigger",
         start: "top 70%",
-        toggleActions: "play none none reverse",
+        toggleActions: "play none none none",
       },
     });
-    tl.from(".host-map", {
-      opacity: 0,
-      y: 100,
-      duration: 1,
-      ease: "power4.out",
-    });
-    tl.from(
-      ".host-card",
-      {
-        opacity: 0,
-        scale: 0.5,
-        duration: 0.5,
-        ease: "power4.out",
-      },
-      "<+0.5"
-    );
 
     tl.from(
       ".host-title",
       {
         opacity: 0,
-        y: -50,
+        y: 50,
         duration: 0.5,
         ease: "power4.out",
       },
@@ -47,7 +31,7 @@ export default function HostAnywhere() {
       ".host-description",
       {
         opacity: 0,
-        y: -50,
+        y: 50,
         duration: 0.5,
         ease: "power4.out",
       },
@@ -57,7 +41,7 @@ export default function HostAnywhere() {
       ".host-button",
       {
         opacity: 0,
-        y: -50,
+        y: 50,
         duration: 0.5,
         ease: "power4.out",
       },
@@ -82,7 +66,7 @@ export default function HostAnywhere() {
           className={`
                 mt-8 inline-flex w-full items-center justify-center rounded-xl px-4 py-3 text-xl font-bold
                 bg-[rgba(24,24,24,0.71)] border focus:outline-none focus-visible:ring-2 hover:bg-[rgba(24,24,24,0.85)]
-                text-radical-red-500 border-radical-red-500 ring-radical-red-500/30`}
+                text-radical-red-500 border-radical-red-500 ring-radical-red-500/30 host-button`}
         >
           Be a host
         </a>

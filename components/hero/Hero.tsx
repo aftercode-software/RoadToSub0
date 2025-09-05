@@ -16,8 +16,7 @@ export default function Hero() {
     const tl = gsap.timeline();
     tl.from(".polkadot-logo", {
       opacity: 0,
-      scale: 0.5,
-      y: -30,
+      y: 50,
       duration: 1,
       ease: "power4.out",
     });
@@ -25,32 +24,17 @@ export default function Hero() {
       ".mision",
       {
         opacity: 0,
-        scale: 0.5,
-        y: -30,
+        y: 50,
         duration: 1,
         ease: "power4.out",
       },
       "<+0.1"
     );
-
-    tl.add("afterIntro");
-
-    tl.from(
-      ".hero-bg",
-      {
-        opacity: 0,
-        duration: 2,
-        ease: "power4.out",
-      },
-      "afterIntro+=0.1"
-    );
-
     tl.from(
       ".hero-title",
       {
         opacity: 0,
-        scale: 0.5,
-        y: -30,
+        y: 50,
         duration: 1.2,
         ease: "power4.out",
       },
@@ -61,8 +45,7 @@ export default function Hero() {
       ".hero-description",
       {
         opacity: 0,
-        scale: 0.5,
-        y: -30,
+        y: 50,
         duration: 1,
         ease: "power4.out",
       },
@@ -73,8 +56,7 @@ export default function Hero() {
       ".hero-email-form",
       {
         opacity: 0,
-        scale: 0.5,
-        y: -30,
+        y: 50,
         duration: 1,
         ease: "power4.out",
       },
@@ -85,8 +67,7 @@ export default function Hero() {
       ".hero-metrics",
       {
         opacity: 0,
-        scale: 0.5,
-        y: -30,
+        y: 50,
         duration: 1,
         ease: "power4.out",
       },

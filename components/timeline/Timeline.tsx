@@ -44,16 +44,25 @@ export default function Timeline() {
   ];
 
   useGSAP(() => {
-    gsap.from(".timeline-title", {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".timeline-title",
+        start: "top 80%",
+        toggleActions: "play none none none",
+      },
+    });
+    tl.from(".timeline-title", {
       opacity: 0,
       y: 50,
       duration: 0.5,
       ease: "power4.out",
-      scrollTrigger: {
-        trigger: ".timeline-title",
-        start: "top 80%",
-        toggleActions: "play none none reverse",
-      },
+    });
+
+    tl.from(".timeline-description", {
+      opacity: 0,
+      y: 50,
+      duration: 0.5,
+      ease: "power4.out",
     });
   });
 
@@ -66,12 +75,12 @@ export default function Timeline() {
       // }}
     >
       <Container className="flex flex-col items-center ">
-        <h2 className="mt-12 font-display leading-[0.95] max-w-5xl text-center flex md:flex-row flex-col gap-4">
+        <h2 className="mt-12 font-display leading-[0.95] max-w-5xl text-center flex md:flex-row flex-col gap-4 timeline-title">
           <span className="block text-3xl sm:text-4xl md:text-5xl text-white">
             The <b>Roadmap</b>
           </span>
         </h2>
-        <p className="mt-4 font-lg max-w-2xl font-manrope text-base text-center text-white/85 sm:text-lg md:max-w-3xl hero-description">
+        <p className="mt-4 font-lg max-w-2xl font-manrope text-base text-center text-white/85 sm:text-lg md:max-w-3xl timeline-description">
           Start anywhere. We guide you to a demo and submission.{" "}
           <span className="font-bold">Win cash prizes along the way.</span>
         </p>

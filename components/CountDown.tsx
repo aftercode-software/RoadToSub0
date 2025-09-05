@@ -1,6 +1,8 @@
 "use client";
 
 import { Container } from "@/layouts/Container";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import { useEffect, useMemo, useState } from "react";
 import EmailForm from "./hero/EmailForm";
 
@@ -20,20 +22,54 @@ export default function CountDownSection({
 }: {
   target: string | number | Date;
 }) {
+  useGSAP(() => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".countdown-container",
+        start: "top 80%",
+        toggleActions: "play none none none",
+      },
+    });
+    tl.from(".countdown-timer", {
+      opacity: 0,
+      y: 50,
+      duration: 0.5,
+      ease: "power4.out",
+    });
+    tl.from(".countdown-title", {
+      opacity: 0,
+      y: 50,
+      duration: 0.5,
+      ease: "power4.out",
+    });
+
+    tl.from(".countdown-description", {
+      opacity: 0,
+      y: 50,
+      duration: 0.5,
+      ease: "power4.out",
+    });
+    tl.from(".countdown-email-form", {
+      opacity: 0,
+      y: 50,
+      duration: 0.5,
+      ease: "power4.out",
+    });
+  });
   return (
-    <Container className="flex justify-center flex-col gap-2 py-20 items-center">
+    <Container className="flex justify-center flex-col gap-2 py-20 items-center countdown-container">
       <Countdown target={target} />
-      <h2 className="text-4xl mt-10 text-center md:text-5xl font-normal flex flex-col z-10 text-white">
+      <h2 className="text-4xl mt-10 text-center md:text-5xl font-normal flex flex-col z-10 text-white countdown-title">
         <span>
           <b>Connect</b> now,{" "}
         </span>
         <b className="mt-1">Stay informed</b>
       </h2>
-      <p className="mt-4 font-lg max-w-2xl mb-10 font-manrope text-base text-center text-white/85 sm:text-lg z-10 md:max-w-md hero-description">
+      <p className="mt-4 font-lg max-w-2xl mb-10 font-manrope text-base text-center text-white/85 sm:text-lg z-10 md:max-w-md countdown-description">
         We’ll only send updates when they’re relevant — no noise, just what
         matters.
       </p>
-      <EmailForm />
+      <EmailForm className="countdown-email-form" />
     </Container>
   );
 }
@@ -68,7 +104,7 @@ function Countdown({
     value: number | string;
     label: string;
   }) => (
-    <div className="px-4 py-2 sm:px-6 sm:py-3 text-center">
+    <div className="px-4 py-2 sm:px-6 sm:py-3 text-center ">
       <div className="tabular-nums tracking-tight text-3xl sm:text-4xl font-extrabold text-green">
         {String(value).padStart(2, "0")}
       </div>
@@ -81,8 +117,8 @@ function Countdown({
   return (
     <div
       aria-live="polite"
-      className={`inline-flex items-stretch rounded-2xl border overflow-hidden
-        backdrop-blur-md bg-green/20 border-green ${className}`}
+      className={`inline-flex items-stretch rounded-2xl border-2 overflow-hidden
+        backdrop-blur-md bg-green-800/60 border-green/50 ${className} countdown-timer`}
     >
       <Cell value={t.days} label="days" />
       <div className="my-2 w-px bg-green" />

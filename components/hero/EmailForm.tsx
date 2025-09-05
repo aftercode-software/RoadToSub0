@@ -37,7 +37,7 @@ export default function EmailForm({ className }: { className?: string }) {
     <form
       onSubmit={onSubmit}
       className={`w-full max-w-3xl rounded-2xl p-2 backdrop-blur ${className}
-                  bg-white/5 ring-1 ring-white/10 shadow-[0_0_0_1px_rgba(0,0,0,.25)]
+                  bg-green-800/40 border-2 border-green/20 ring-1 ring-white/10 shadow-[0_0_0_1px_rgba(0,0,0,.25)]
                   `}
     >
       <div className="flex flex-col gap-2 sm:flex-row sm:items-stretch">
@@ -49,11 +49,12 @@ export default function EmailForm({ className }: { className?: string }) {
             aria-hidden="true"
             viewBox="0 0 24 24"
             className="h-5 w-5 opacity-70"
+            // fill="white"
           >
             <path
               d="M3 7.5A2.5 2.5 0 0 1 5.5 5h13A2.5 2.5 0 0 1 21 7.5v9A2.5 2.5 0 0 1 18.5 19h-13A2.5 2.5 0 0 1 3 16.5v-9Zm1.8-.7 6.88 5.16a2 2 0 0 0 2.64 0L21.2 6.8"
               fill="none"
-              stroke="currentColor"
+              stroke="white"
               strokeWidth="1.5"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -67,7 +68,7 @@ export default function EmailForm({ className }: { className?: string }) {
             placeholder="nerd@cool.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="peer w-full bg-transparent outline-none text-white placeholder-white/50 focus:text-white"
+            className="peer w-full bg-transparent border-none outline-none text-white placeholder-white/50 focus:text-white"
             aria-label="Email"
             required
             disabled={loading}
