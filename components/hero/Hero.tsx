@@ -1,16 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
+import useIsMobile from "@/hooks/useIsMobile";
 import { Container } from "@/layouts/Container";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { useState } from "react";
 import GridDistortion from "../ui/shadcn-io/grid-distortion";
 import EmailForm from "./EmailForm";
 import MetricHero from "./MetricHero";
 
 export default function Hero() {
-  const isMobile = window.innerWidth < 768;
+  const isMobile = useIsMobile();
 
   useGSAP(() => {
     const tl = gsap.timeline();

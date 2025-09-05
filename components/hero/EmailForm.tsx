@@ -20,7 +20,7 @@ export default function EmailForm({ className }: { className?: string }) {
 
     setLoading(true);
     try {
-      const { data, error } = await supabase.functions.invoke("subscribe", {
+      const { error } = await supabase.functions.invoke("subscribe", {
         body: { email: email.trim() },
       });
 
