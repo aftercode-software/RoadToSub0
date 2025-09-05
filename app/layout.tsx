@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Road to Sub0",
     description:
-      "The premier Substrate and Polkadot developer competition. Build, compete, and win in the decentralized ecosystem.",
+      "Global hackathon series. Start your project on Polkadot and compete for $100k in funding and mentoring.",
     url: "https://roadtosub0.com",
     siteName: "Road to Sub0",
     images: [
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Road to Sub0",
     description:
-      "Join the ultimate Substrate and Polkadot developer competition. Build innovative blockchain solutions and win amazing prizes.",
+      "Global hackathon series. Start your project on Polkadot and compete for $100k in funding and mentoring.",
     images: ["https://roadtosub0.com/og-image.webp"],
   },
 };

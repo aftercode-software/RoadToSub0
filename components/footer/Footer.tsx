@@ -1,5 +1,4 @@
 import { Container } from "@/layouts/Container";
-import MetricHero from "../hero/MetricHero";
 
 export default function Footer() {
   return (

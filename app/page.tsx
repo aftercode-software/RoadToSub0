@@ -1,8 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import CountDownSection from "@/components/CountDown";
-import FaultyTerminalBackground from "@/components/FaultyTerminalBackground";
 import Timeline from "@/components/timeline/Timeline";
-import { GridDistortion } from "@/components/ui/shadcn-io/grid-distortion";
 import Hero from "../components/hero/Hero";
 import HostAnywhere from "../components/host-anywhere/HostAnywhere";
 

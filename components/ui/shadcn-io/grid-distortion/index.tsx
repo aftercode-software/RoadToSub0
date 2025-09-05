@@ -52,15 +52,15 @@ export const GridDistortion = forwardRef<HTMLDivElement, GridDistortionProps>(
     ref
   ) => {
     const domProps = { ...props };
-    // @ts-ignore
+    // @ts-expect-error: grid is not a valid prop
     delete domProps.grid;
-    // @ts-ignore
+    // @ts-expect-error: mouse is not a valid prop
     delete domProps.mouse;
-    // @ts-ignore
+    // @ts-expect-error: strength is not a valid prop
     delete domProps.strength;
-    // @ts-ignore
+    // @ts-expect-error: relaxation is not a valid prop
     delete domProps.relaxation;
-    // @ts-ignore
+    // @ts-expect-error: imageSrc is not a valid prop
     delete domProps.imageSrc;
 
     const containerRef = useRef<HTMLDivElement>(null);
