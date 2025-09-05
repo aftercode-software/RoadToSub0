@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import CountDownSection from "@/components/CountDown";
 import Timeline from "@/components/timeline/Timeline";
 import WhatIsSub0 from "@/components/WhatIsSub0";

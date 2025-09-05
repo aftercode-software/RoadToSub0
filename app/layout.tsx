@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Road to Sub0",
     description:
-      "Global hackathon series. Start your project on Polkadot and compete for $100k in funding and mentoring.",
+      "Global hackathon series. Start your project on Polkadot and compete for $100k in funding and mentoring",
     url: "https://roadtosub0.com",
     siteName: "Road to Sub0",
     images: [
@@ -52,6 +52,7 @@ export const metadata: Metadata = {
     images: ["https://roadtosub0.com/og-image.webp"],
   },
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{
