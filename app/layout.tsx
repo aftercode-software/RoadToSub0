@@ -1,6 +1,7 @@
 import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/Navbar";
 import { useGSAP } from "@gsap/react";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import type { Metadata } from "next";
@@ -85,6 +86,9 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <GoogleAnalytics
+          gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || ""}
+        />
       </body>
     </html>
   );
