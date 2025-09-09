@@ -133,11 +133,27 @@ function Card({ item }: { item: TimelineItem }) {
         {item.dateLabel && (
           <span
             className="
-              absolute -top-10 left-1/2 -translate-x-1/2 rounded-md border border-white/75
-              bg-[#15143A] px-3 py-1 text-xs font-semibold tracking-wider text-white shadow-md
-            "
+            absolute md:-top-14 -top-12  rounded-xl border border-white/60
+            bg-[#15143A] px-5 py-2 text-xs md:text-base font-extrabold tracking-wider text-white shadow-md
+          "
           >
             {item.dateLabel}
+          </span>
+        )}
+
+        {item.prize && (
+          <span
+            className={`
+                absolute -top-5 -right-5 z-10 rounded-lg px-4 py-1.5
+                text-2xl font-bold
+                bg-[#15143A] border shadow-[0_4px_20px_rgba(0,0,0,0.35)]
+                ${isGreen ? "text-green-500 border-green-500/35" : ""}
+                ${
+                  isPink ? "text-radical-red-500 border-radical-red-500/35" : ""
+                }
+            `}
+          >
+            {item.prize}
           </span>
         )}
         <article

@@ -34,6 +34,7 @@ export default function Timeline() {
     {
       id: "sub0",
       title: "sub0",
+      prize: "$40K",
       dateLabel: "14-16 nov",
       ctaLabel: "Learn more",
       ctaHref: "https://sub0.gg",
