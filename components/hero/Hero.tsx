@@ -103,7 +103,7 @@ export default function Hero() {
         </h1>
 
         <p className="font-medium max-w-2xl font-manrope text-base text-center text-white sm:text-xl md:max-w-md hero-description">
-          Complete, launch, win — and keep creating with Polkadot.
+          Compete, launch, win — and keep creating with Polkadot.
         </p>
 
         <EmailForm className="hero-email-form" />

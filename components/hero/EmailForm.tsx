@@ -91,7 +91,7 @@ export default function EmailForm({ className }: { className?: string }) {
                      disabled:opacity-60 disabled:cursor-not-allowed
                      sm:min-w-[220px]"
           >
-            {loading ? "Sending..." : "Get Started"}
+            {loading ? "Sending..." : "Discover"}
           </button>
         </div>
       ) : (
