@@ -24,7 +24,7 @@ export default function Navbar() {
         </div>
         <section>
           <a
-            href="#roadmap"
+            href="https://sub0.gg"
             className={`
               inline-flex w-full items-center justify-center rounded-xl px-4 py-3 text-md font-bold
               bg-[15143A] border focus:outline-none focus-visible:ring-2 hover:bg-[15143A]

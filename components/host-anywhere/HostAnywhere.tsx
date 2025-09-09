@@ -71,7 +71,7 @@ export default function HostAnywhere() {
                 bg-[rgba(24,24,24,0.71)] border focus:outline-none focus-visible:ring-2 hover:bg-[rgba(24,24,24,0.85)]
                 text-radical-red-500 border-radical-red-500 ring-radical-red-500/30 host-button`}
         >
-          Join the community
+          Join a meetup
         </a>
       </div>
     </Container>

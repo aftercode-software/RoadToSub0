@@ -80,15 +80,15 @@ export default function CountDownSection({
   });
   return (
     <Container className="flex justify-center flex-col gap-2 py-20 items-center countdown-container">
-      <Countdown target={target} />
-      <h2 className="text-4xl mt-10 text-center md:text-5xl font-normal flex flex-col z-10 text-white countdown-title">
+      <h2 className="text-4xl my-10 text-center md:text-5xl font-normal flex flex-col z-10 text-white countdown-title">
         <span>
-          Your <b>journey</b>{" "}
+          The <b>countdown</b>{" "}
         </span>
         <span>
-          begins <b className="mt-1">here</b>
+          to <b className="mt-1">sub0 starts here </b>
         </span>
       </h2>
+      <Countdown target={target} />
       <p className="mt-4 font-lg max-w-2xl mb-10 font-manrope text-base text-center text-white/85 sm:text-lg z-10 md:max-w-md countdown-description">
         Sign up for free and find out how to participate.
       </p>

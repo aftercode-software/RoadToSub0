@@ -23,11 +23,11 @@ export default function Timeline() {
       id: "gbp",
       dateLabel: "6 oct",
       prize: "$40K",
-      title: "Global Builder Party",
+      title: "Builder Party",
       description:
         "Global online hackathon that puts your skills to the test with the latest Polkadot tech.",
       ctaLabel: "Learn more",
-      ctaHref: "https://polkadot.devpost.com/",
+      ctaHref: "https://polkadot.cloud/build-party ",
       variant: "event",
       accent: "pink",
     },
