@@ -7,14 +7,13 @@ import gsap from "gsap";
 
 export default function Timeline() {
   const items: TimelineItem[] = [
-    { id: "start", variant: "start" },
     {
       id: "latin-hack",
       dateLabel: "27 sept",
       prize: "$21K",
       title: "Latin Hack",
       description:
-        "Starting line in LATAM. Welcome first-timers and seniors, with tracks that reward simple, working prototypes.",
+        "Kick off in LATAM. Welcome first-timers and seniors, with tracks that reward simple, working prototypes.",
       ctaLabel: "Learn more",
       ctaHref: "https://nerdconf.com/",
       variant: "event",
@@ -35,6 +34,7 @@ export default function Timeline() {
     {
       id: "sub0",
       title: "sub0",
+      dateLabel: "14-16 nov",
       ctaLabel: "Learn more",
       ctaHref: "https://sub0.gg",
       variant: "logo",

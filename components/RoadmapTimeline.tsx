@@ -133,7 +133,7 @@ function Card({ item }: { item: TimelineItem }) {
         {item.dateLabel && (
           <span
             className="
-              absolute -top-7 left-1/2 -translate-x-1/2 rounded-md border border-white/75
+              absolute -top-10 left-1/2 -translate-x-1/2 rounded-md border border-white/75
               bg-[#15143A] px-3 py-1 text-xs font-semibold tracking-wider text-white shadow-md
             "
           >
