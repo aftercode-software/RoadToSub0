@@ -1,12 +1,11 @@
 import { Container } from "@/layouts/Container";
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="bg-black/40 border-t border-green-500/20 text-white mt-20">
       <Container className="py-10">
-        {/* Main Footer Content */}
         <div className="flex flex-col md:flex-row justify-between items-start gap-8 mb-12">
-          {/* Brand Section */}
           <div className="flex-1">
             <div className="flex items-center space-x-2">
               <span className="text-2xl font-bold">Road to</span>
@@ -24,7 +23,6 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Connect */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-green-400">Connect</h3>
             <div className="space-y-3">
@@ -46,11 +44,10 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-sm text-gray-400">
             <span className="text-center sm:text-left">
-              © 2024 Road to Sub0. All rights reserved.
+              © {currentYear} Road to Sub0. All rights reserved.
             </span>
             <div className="flex space-x-4">
               <span>

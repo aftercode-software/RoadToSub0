@@ -93,7 +93,7 @@ export default function Hero() {
           className="polkadot-logo w-40 md:w-auto"
         />
         <p className="text-green text-lg md:text-3xl text-center mision">
-          One journey. Three hackathons
+          One journey. Three hackathons.
         </p>
         <h1 className="font-display leading-[0.95] md:max-w-7xl text-center text-white hero-title flex flex-col md:flex-row items-center justify-center gap-2 md:gap-6">
           <span className="font-bold text-6xl sm:text-6xl md:text-8xl flex items-center gap-3 md:gap-6">
@@ -103,7 +103,7 @@ export default function Hero() {
         </h1>
 
         <p className="font-medium max-w-2xl font-manrope text-base text-center text-white sm:text-xl md:max-w-md hero-description">
-          Complete, launch and win cash prizes to keep building on Polkadot
+          Complete, launch, win — and keep creating with Polkadot.
         </p>
 
         <EmailForm className="hero-email-form" />

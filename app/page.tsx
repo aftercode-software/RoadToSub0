@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <Hero />
       <Timeline />
-      <WhatIsSub0 />
+      {/* <WhatIsSub0 /> */}
       <section
         className="w-full min-h-screen relative pb-20"
         style={{

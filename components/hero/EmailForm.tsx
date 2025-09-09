@@ -91,7 +91,7 @@ export default function EmailForm({ className }: { className?: string }) {
                      disabled:opacity-60 disabled:cursor-not-allowed
                      sm:min-w-[220px]"
           >
-            {loading ? "Sending..." : "Register now"}
+            {loading ? "Sending..." : "Get Started"}
           </button>
         </div>
       ) : (
@@ -101,6 +101,10 @@ export default function EmailForm({ className }: { className?: string }) {
           </p>
         </div>
       )}
+      <p className="text-xs text-white/70 pt-2 pb-1 text-center">
+        Your data will only be used to inform you about the 2025 Road to Sub0
+        campaign
+      </p>
     </form>
   );
 }

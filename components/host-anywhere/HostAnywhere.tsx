@@ -57,9 +57,9 @@ export default function HostAnywhere() {
         </h2>
         <span className="host-description text-white">
           <p className="text-xl font-normal font-manrope">
-            From Argentina to China, join the Road to Sub0 meetups where
-            builders connect, share ideas and team up to participate in the Sub0
-            hackathons.
+            From Argentina to China, join Polkadot meetups worldwide, come hack,
+            connect with builders and community while earning reputation in the
+            Polkadot Roots program.
           </p>
         </span>
         <a
