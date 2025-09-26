@@ -31,6 +31,18 @@ export default function Timeline() {
       variant: "event",
       accent: "pink",
     },
+     {
+      id: "doy-your-future",
+      dateLabel: "27 oct",
+      prize: "$12K",
+      title: "Dot Your Future",
+      description:
+        "The Asia hack on the Road to Sub0. A playground for pros ready to push Polkadot tech to the limit — REVM, PolkaVM, liquid staking on Bifrost",
+      ctaLabel: "Learn more",
+      ctaHref: "https://luma.com/nwa8qf6e",
+      variant: "event",
+      accent: "green",
+    },
     {
       id: "sub0",
       title: "sub0",
