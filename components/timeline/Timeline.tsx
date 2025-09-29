@@ -20,7 +20,7 @@ export default function Timeline() {
       accent: "green",
     },
     {
-      id: "gbp",
+      id: "Builder Party",
       dateLabel: "6 oct",
       prize: "$40K",
       title: "Builder Party",
@@ -32,14 +32,14 @@ export default function Timeline() {
       accent: "pink",
     },
      {
-      id: "doy-your-future",
+      id: "dot-your-future",
       dateLabel: "27 oct",
       prize: "$12K",
       title: "Dot Your Future",
       description:
         "The Asia hack on the Road to Sub0. A playground for pros ready to push Polkadot tech to the limit — REVM, PolkaVM, liquid staking on Bifrost",
       ctaLabel: "Learn more",
-      ctaHref: "https://luma.com/nwa8qf6e",
+      ctaHref: "https://medium.com/@OneBlockplus/12-000-prize-pool-dot-your-future-create-connect-transform-hackathon-is-now-live-0cecf95382bf",
       variant: "event",
       accent: "green",
     },
