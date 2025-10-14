@@ -93,7 +93,7 @@ export default function Hero() {
           className="polkadot-logo w-40 md:w-auto"
         />
         <p className="text-green text-lg md:text-3xl text-center mision">
-          One journey. Three hackathons.
+          One journey. Four hackathons.
         </p>
         <h1 className="font-display leading-[0.95] md:max-w-7xl text-center text-white hero-title flex flex-col md:flex-row items-center justify-center gap-2 md:gap-6">
           <span className="font-bold text-6xl sm:text-6xl md:text-8xl flex items-center gap-3 md:gap-6">

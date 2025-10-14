@@ -63,7 +63,7 @@ export default function HostAnywhere() {
           </p>
         </span>
         <a
-          href="https://luma.com/sub0"
+          href="https://luma.com/roadtosub0"
           target="_blank"
           rel="noopener noreferrer"
           className={`

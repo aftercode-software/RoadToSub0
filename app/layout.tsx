@@ -26,7 +26,7 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   title: "Road to Sub0",
   description:
-    "Make your idea come to life. Join three hackathons, win prizes, and showcase at sub0 — the biggest Polkadot event in front of global experts.",
+    "Make your idea come to life. Join four hackathons, win prizes, and showcase at sub0 — the biggest Polkadot event in front of global experts.",
   keywords:
     "hackathon, polkadot, blockchain competition, project, ship, vercel, developer, contest, prizes, crypto, web3, smart contracts, parachain, cryptocurrency, innovation",
   openGraph: {
